@@ -35,17 +35,17 @@ To build the cross-toolchain under Debian 'wheezy'/'jessie' you need the package
 - gettext
 - autoconf
 - automake
-- libtool
+- libtool-bin >= 2.4
 - bison
 - flex
 - texinfo
 - libgmp3-dev
 - libmpfr-dev
 - libmpc-dev
-
+- help2man
 
 
 
 -
-05/10/2015
-Padavan
+05/10/2015 Padavan
+04.07.2022 ProBackup-NL

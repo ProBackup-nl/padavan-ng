@@ -18,4 +18,6 @@ clean:
 	$(MAKE) -C $(SRC_NAME) clean
 
 romfs:
-	$(ROMFSINST) $(SRC_NAME)/src/dnsmasq /usr/sbin/dnsmasq
+	cp $(SRC_NAME)/src/dnsmasq .
+	$(STRIP) dnsmasq
+	$(ROMFSINST) /usr/sbin/dnsmasq

@@ -8,7 +8,11 @@ The cross-toolchain is builded to CPU with arch MIPS32_R2 LE:
 To build the cross-toolchain, you need Linux environment. Debian 'wheezy' 7.8.0 and
 Debian 'jessie' 8.0.0 distros has been tested and recommended.
 
-Just run build script "build_toolchain" and wait for the build process complete.
+Just run build script "sudo ./build_toolchain" and wait for the build process complete.
+
+Be patient! The entire build process may take 24 hours to complete. For example 
+building "gcc" for "pass-1 core C gcc compiler" is only a part and may already take 
+3 hours on a 1.4 Ghz Intel Core i5 to complete.
 
 The "build_toolchain" script is intended to build cross-toolchain for Linux
 kernel 3.4.x. Target directory is "toolchain-3.4.x".
@@ -44,7 +48,7 @@ To build the cross-toolchain under Debian 'wheezy'/'jessie' you need the package
 - libmpc-dev
 - help2man
 
-
+Requirements for other OS-es you can find in /testing/docker
 
 -
 05/10/2015 Padavan

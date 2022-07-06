@@ -15,7 +15,6 @@ Makefile.in
 /autom4te.cache/
 /build-aux/
 /config.*
-/configure
 /libtool
 /stamp-h1
 /iptables/iptables-apply.8

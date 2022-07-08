@@ -93,7 +93,7 @@ After manual NVRAM reset:
 - Updated libsodium v1.0.18
 - Updated libssl to v1.1.1l
 - Updated libtirpc to v1.3.2
-- Updated libusb to v1.0.24
+- Updated libusb to v1.0.24 (depends on automake-1.16)
 - Updated libvorbis to v1.3.7
 - Updated libxml2 to v2.9.12
 - Updated tcpdump to v4.99.1

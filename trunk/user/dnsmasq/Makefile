@@ -12,7 +12,7 @@ COPTS += -DNO_IPSET
 endif
 
 all:
-	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME) CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" COPTS="$(COPTS)"
+	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME) CFLAGS="$(CFLAGS) -ffunction-sections -fdata-sections" LDFLAGS="$(LDFLAGS) -Wl,--gc-sections" COPTS="$(COPTS)"
 
 clean:
 	$(MAKE) -C $(SRC_NAME) clean
